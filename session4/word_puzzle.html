@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle world</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    background-color: #114B5F;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 2%;
+}
+#container {
+    width: 500px;
+    height: 500px;
+    background: #E4FDE1;
+    margin: 10px auto;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: 'Audiowide';
+    color: #E4FDE1;
+}
+ul li {
+    background: #456990;
+    width: 30%;
+    height: 150px;
+    border: 1px solid #028090;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.decord
+{
+    color:aliceblue;
+    text-align: left;
+}
+
+button{
+    padding:5px;
+    margin:3px;
+    border:2px;
+    
+}
+input{
+    width:300px;
+    height: 30px;
+}
+ul :hover{
+    background-color: rgb(104, 238, 238);
+}
+    </style>
+</head>
+<body>
+    <h2>Puzzle </h2>
+    <input type="text"id="input1" placeholder="NAME">
+    <div id="container">
+      <div>
+        <ul id='list1'>
+         <li id="alpha1">A</li>
+           <li id="alpha2">B</li>
+            <li id="alpha3">C</li>
+             <li id="alpha4">D</li>
+              <li id="alpha5">E</li>
+               <li id="alpha6">F</li>
+                <li id="alpha7">G</li>
+                 <li id="alpha8">O</li>
+                 <li id="alpha9" >T</li>
+                 
+      </ul>
+      </div>
+    </div>
+    
+       <div> <button type="button" id="submit">Submit</button></div>
+</div>
+ <!-- <div ><button type="button" id="reset" >Reset</button></div>  -->
+    <div class="decord"><h4>The word formed is</h4>
+          <div id="name"></div>
+          <div id="animal"></div>
+        <div id="word"> </div>
+        <div id="score">  </div>
+        <div id="win"></div>
+      
+    </div>
+
+    <script src="./Lab5.js"></script>
+</body>
+</html>
+
