@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image </title>
+    <style>
+.image{
+      text-align: center;
+}
+        .btn{
+            border: 3px solid azure;
+            margin:auto;
+            width:100px;
+            height:100px;
+
+        }
+        button{
+            background-color: palevioletred;
+            font-size:40px;
+            font-family:monospace;
+            font-weight:unset;
+            font-style:inherit;
+
+        }
+        button:hover{
+            background-color: lightpink;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        section{
+            position:center;
+           
+            height:300px;
+            width:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="image" id="imgchange"><img src=" "/></section>
+    <div class="btn" ><button  id="change">Change</button></div>
+</body>
+
+<script>
+    
+      var as=["url('img1.jpeg')",'url("img2.jpeg")','url("img3.jpg")','url("img4.jpg")','url("img5.jpeg")'];
+const a=document.querySelector('section');
+
+      document.getElementById("change").addEventListener('click',()=>{;
+
+     var c=Math.floor(Math.random()*as.length)
+       var p=as[c];
+       
+       a.style.backgroundImage=p;
+      // document.getElementById("imgchange").src=p;
+       
+});
+//background-position: center;
+            //xt-align: center;
+//var imgstr='<img src="'+path"
+       //var imgStr = '<img src="' +  p + '" alt = "">';
+      //document.getElementById("imgchange").src=imgStr;
+     //document.write(g);
+  // document.write(imgStr);
+//console.log(p);
+       //document.querySelector("img").style.background.image=p;
+
+    
+</script>
+</html>
